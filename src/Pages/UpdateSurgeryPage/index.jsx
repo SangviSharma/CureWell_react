@@ -78,6 +78,7 @@ const UpdateSurgeryPage = () => {
   return (
     <>
       <Navbar />
+      <br/>
 
       <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "90vh" }}>
         <div className="shadow rounded p-4" style={{ width: "400px", backgroundColor: "#192126" }}>

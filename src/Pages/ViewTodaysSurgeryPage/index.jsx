@@ -8,17 +8,14 @@ const ViewTodaySurgeryPage = () => {
 
   const [surgeries, setSurgeries] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/surgeries")
-      .then((res) => {
-        console.log("SURGERIES:", res.data); 
-        setSurgeries(res.data);
-      })
-      .catch((err) => {
-        console.log("ERROR:", err);
-      });
-  }, []);
+ useEffect(() => {
+  axios.get("http://localhost:5000/api/surgeries/today")
+    .then((res) => {
+      console.log("API DATA:", res.data);
+      setSurgeries(res.data); 
+    })
+    .catch((err) => console.log(err));
+}, []);
 
   return (
     <>

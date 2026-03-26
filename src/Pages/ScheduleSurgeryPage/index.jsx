@@ -55,14 +55,13 @@ const ScheduleSurgeryPage = () => {
       isTimeInvalid
     ) return;
 
-    axios
-      .post("http://localhost:5000/api/surgeries", {
-        doctor_id: form.doctorId,
-        date: form.date,
-        start_time: form.startTime,
-        end_time: form.endTime,
-        category: form.category,
-      })
+    axios.post("http://localhost:5000/api/surgeries", {
+      doctorId: form.doctorId,
+      date: form.date,
+      startTime: form.startTime,
+      endTime: form.endTime,
+      category: form.category,
+})
       .then(() => {
         alert("Surgery scheduled successfully!");
 

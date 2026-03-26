@@ -5,7 +5,7 @@ const Header = () => {
     <div
       style={{
         height: "600px",
-        background: "linear-gradient(rgba(115, 125, 132, 0.8), rgba(67, 92, 109, 0.8)), url('https://imgcdn.stablediffusionweb.com/2024/6/1/5745d4b0-b2b6-4ff5-a74b-31bd63a4ed74.jpg')",
+        background: "linear-gradient(rgba(92, 97, 101, 0.8), rgba(92, 97, 101, 0.8)), url('https://imgcdn.stablediffusionweb.com/2024/6/1/5745d4b0-b2b6-4ff5-a74b-31bd63a4ed74.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
